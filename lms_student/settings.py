@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_1h!a@4sfuk$-c*4^ra8aeq+8^4u1)x$!=^xkniqwois1w!#8v
 DEBUG = True
 
 ALLOWED_HOSTS = ['lms-school.herokuapp.com',
-                 '127.0.0.1:8000']
+                 '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -41,10 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'main_app',
+    'student_app',
+    'staff_app',
+    'hod_app',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',

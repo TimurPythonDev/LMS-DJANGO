@@ -12,6 +12,9 @@ urlpatterns = [
     path('doLogin',views.doLogin,name='doLogin'),
     path('doLogout',views.doLogout,name='logout'),
 
+    # Profile urls
+    path('profile',views.Profile,name='profile'),
+    path('edit/profile',views.Edit_Profile,name='edit_profile'),
 
     #  Templates urls   
     path('base/',views.Base,name='base'),

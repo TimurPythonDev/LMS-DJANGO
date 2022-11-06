@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'phone_field',
+
     'main_app',
     'student_app',
     'staff_app',
@@ -136,6 +138,9 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+GOOGLE_MAPS_API_KEY='YOUR_GOOGLE_API_KEY'
+
 
 AUTH_USER_MODEL = 'main_app.CustomUser'
 
